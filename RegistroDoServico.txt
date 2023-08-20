@@ -1,0 +1,26 @@
+Para registrar o serviço:
+
+1 - Baixe o projeto
+2 - Compile
+3-  Anote o diretório do projeto BitcoinProjectUpdate\bin\Debug onde contém um .exe
+4 - Abra o cmd como administrador
+5 - Digite
+sc create BitcoinUpdateDatabase binPath= "C:\Users\linas\OneDrive\Documents\DataScienceProject\DataScienceProject\BitcoinProjectUpdate\bin\Debug\BitcoinProjectUpdate.exe" (altere o caminho)
+6 - Cole no cmd e Enter
+OBs. para start o serviço
+sc start BitcoinUpdateDatabase
+
+Para parar o serviço
+sc stop BitcoinUpdateDatabase
+
+Para excluir:
+sc delete BitcoinUpdateDatabase
+
+A cada alteração no projeto:
+1 - Pare o serviço
+2 - Altere
+3 - Compile
+4  - Reinicie o serviço
+
+Para executar o projeto C#:
+Clica em cima do projeto BitcoinProjectConsole, botão direito do mouse e Set Start Project
